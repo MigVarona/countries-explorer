@@ -1,0 +1,15 @@
+{
+  "name": "countries-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "mobile",
+    "web"
+  ],
+  "scripts": {
+    "mobile": "npm run start --workspace mobile",
+    "web": "npm run dev --workspace web",
+    "test": "npm run test --workspaces --if-present"
+  }
+}

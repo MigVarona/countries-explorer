@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# expo
+mobile/.expo/
+mobile/dist/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# next.js
+web/.next/
+web/out/
+next-env.d.ts
+
+# builds
+build/
+dist/
+
+# misc
+.DS_Store
+*.log
+.env
+.env.*
+coverage/
