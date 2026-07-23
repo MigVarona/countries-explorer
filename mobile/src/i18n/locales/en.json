@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "Countries",
+    "searchPlaceholder": "Search countries by name…",
+    "results_one": "{{count}} country",
+    "results_other": "{{count}} countries"
+  },
+  "detail": {
+    "title": "Country detail",
+    "officialName": "Official name",
+    "capital": "Capital",
+    "population": "Population",
+    "region": "Region",
+    "noCapital": "No capital"
+  },
+  "states": {
+    "loading": "Loading countries…",
+    "empty": "No results found",
+    "emptyHint": "Try a different search term.",
+    "error": "Something went wrong. Please check your connection and try again.",
+    "retry": "Retry"
+  },
+  "language": {
+    "switchTo": "Cambiar idioma a español"
+  }
+}
