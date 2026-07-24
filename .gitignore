@@ -23,6 +23,7 @@ artifacts/*.apk
 
 # misc
 .DS_Store
+CLAUDE.md
 *.log
 .env
 .env.*
