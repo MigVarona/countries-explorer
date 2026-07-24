@@ -10,6 +10,7 @@ Expo / React Native —la entrega principal— y una web companion sencilla con 
 - **Android APK v1.0.0:** [descargar e instalar](https://expo.dev/artifacts/eas/QBD3TgwEKGgQ4kH8pIgEINukS4emqkgNuY2rSj3eL9o.apk).
 - **Detalles de la build:** [Expo EAS Build](https://expo.dev/accounts/mivarona/projects/countries-explorer/builds/93d07509-dbdd-4cd2-9cba-2f91381ead21).
 - **Web desplegada:** [countries-explorer-web.vercel.app](https://countries-explorer-web.vercel.app/).
+- **Web en local:** se ejecuta siguiendo las instrucciones de este documento.
 
 El APK es una build `preview` de distribución interna: se puede instalar directamente en un
 dispositivo Android y no necesita que Metro ni Expo Go estén ejecutándose.
