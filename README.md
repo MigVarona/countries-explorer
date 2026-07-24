@@ -6,14 +6,28 @@ Expo / React Native —la entrega principal— y una web companion sencilla con 
 
 ## Entrega
 
-- **Código fuente:** este repositorio.
-- **Android APK v1.0.0:** [descargar e instalar](https://github.com/MigVarona/countries-explorer/releases/download/v1.0.0/countries-explorer-v1.0.0.apk).
-- **Detalles de la build:** [Expo EAS Build](https://expo.dev/accounts/mivarona/projects/countries-explorer/builds/93d07509-dbdd-4cd2-9cba-2f91381ead21).
-- **Web desplegada:** [countries-explorer-web.vercel.app](https://countries-explorer-web.vercel.app/).
-- **Web en local:** se ejecuta siguiendo las instrucciones de este documento.
+La entrega incluye el código fuente completo del monorepo, la aplicación móvil Expo y la
+aplicación web Next.js. Ambas plataformas reutilizan la lógica de dominio de
+`@countries/shared`.
 
-El APK es una build `preview` de distribución interna: se puede instalar directamente en un
-dispositivo Android y no necesita que Metro ni Expo Go estén ejecutándose.
+### Código fuente
+
+Este repositorio contiene:
+
+- `mobile/`: aplicación Expo / React Native.
+- `web/`: aplicación Next.js.
+- `shared/`: tipos, cliente de API, mappers, formatters y tests compartidos.
+
+Las instrucciones de instalación, ejecución y tests se encuentran más abajo en este documento.
+
+### Versiones disponibles para evaluación
+
+- **Web desplegada:** [countries-explorer-web.vercel.app](https://countries-explorer-web.vercel.app/).
+- **Android APK v1.0.0:** [descargar e instalar](https://github.com/MigVarona/countries-explorer/releases/download/v1.0.0/countries-explorer-v1.0.0.apk).
+- **Detalles de la compilación Android:** [Expo EAS Build](https://expo.dev/accounts/mivarona/projects/countries-explorer/builds/93d07509-dbdd-4cd2-9cba-2f91381ead21).
+
+El APK y la web desplegada se proporcionan para facilitar la evaluación. Todo el proyecto también
+puede instalarse y ejecutarse localmente siguiendo las instrucciones de este README.
 
 ## Funcionalidades
 
