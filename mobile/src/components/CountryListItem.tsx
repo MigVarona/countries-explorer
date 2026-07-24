@@ -1,8 +1,9 @@
-import { formatPopulation, type Country } from "@countries/shared";
+import { formatPopulation, getCountryName, type Country } from "@countries/shared";
 import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
+import { FavoriteButton } from "./FavoriteButton";
 import { colors, MIN_TOUCH_SIZE, spacing } from "../theme";
 
 interface Props {
@@ -12,11 +13,12 @@ interface Props {
 
 function CountryListItemBase({ country, onPress }: Props) {
   const { t, i18n } = useTranslation();
+  const displayName = getCountryName(country, i18n.language.startsWith("es") ? "es" : "en");
 
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={country.name}
+      accessibilityLabel={displayName}
       accessibilityHint={t("detail.title")}
       onPress={() => onPress(country)}
       style={({ pressed }) => [styles.container, pressed && styles.pressed]}
@@ -29,34 +31,42 @@ function CountryListItemBase({ country, onPress }: Props) {
       />
       <View style={styles.info}>
         <Text style={styles.name} numberOfLines={1}>
-          {country.name}
+          {displayName}
         </Text>
         <Text style={styles.meta} numberOfLines={1}>
-          {country.region}
+          {t(`regions.${country.region}`, { defaultValue: country.region })}
           {country.capital ? ` · ${country.capital}` : ""}
         </Text>
+        <Text style={styles.population} numberOfLines={1}>
+          {formatPopulation(country.population, i18n.language)}
+        </Text>
       </View>
-      <Text style={styles.population}>
-        {formatPopulation(country.population, i18n.language)}
-      </Text>
+      <FavoriteButton countryId={country.id} />
     </Pressable>
   );
 }
 
-/** Memoized so FlatList re-renders only the rows whose data changed. */
+/** Memoized so the list only re-renders rows whose data actually changed. */
 export const CountryListItem = memo(CountryListItemBase);
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     flexDirection: "row",
     alignItems: "center",
     gap: spacing.md,
     minHeight: MIN_TOUCH_SIZE + spacing.lg,
-    paddingHorizontal: spacing.lg,
+    paddingLeft: spacing.md,
     paddingVertical: spacing.md,
+    borderRadius: 12,
     backgroundColor: colors.card,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.border,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.border,
+    shadowColor: "#12335B",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.08,
+    shadowRadius: 8,
+    elevation: 2,
   },
   pressed: {
     opacity: 0.6,
@@ -70,7 +80,7 @@ const styles = StyleSheet.create({
   },
   info: {
     flex: 1,
-    gap: spacing.xs,
+    gap: 2,
   },
   name: {
     fontSize: 16,
@@ -82,7 +92,7 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
   },
   population: {
-    fontSize: 13,
+    fontSize: 12,
     color: colors.textMuted,
     fontVariant: ["tabular-nums"],
   },

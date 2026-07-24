@@ -19,10 +19,12 @@ next-env.d.ts
 # builds
 build/
 dist/
+artifacts/*.apk
 
 # misc
 .DS_Store
 *.log
 .env
 .env.*
+!.env.example
 coverage/

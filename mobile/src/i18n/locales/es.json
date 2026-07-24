@@ -1,9 +1,29 @@
 {
+  "welcome": {
+    "title": "Countries Explorer",
+    "eyebrow": "EXPLORA EL MUNDO",
+    "subtitle": "Explora todos los países del mundo, con banderas, capitales, población y región.",
+    "featureSearch": "Busca cualquier país por su nombre al instante",
+    "featureFavorites": "Guarda tus favoritos y encuéntralos después",
+    "featureLanguages": "Disponible en español e inglés",
+    "open": "Ver presentación",
+    "start": "Empezar"
+  },
   "list": {
     "title": "Países",
+    "subtitle": "Descubre el mundo, país a país.",
     "searchPlaceholder": "Buscar países por nombre…",
+    "clearSearch": "Borrar búsqueda",
     "results_one": "{{count}} país",
     "results_other": "{{count}} países"
+  },
+  "filters": {
+    "all": "Todas",
+    "favorites": "Favoritos"
+  },
+  "favorites": {
+    "add": "Añadir a favoritos",
+    "remove": "Quitar de favoritos"
   },
   "detail": {
     "title": "Detalle del país",
@@ -11,16 +31,70 @@
     "capital": "Capital",
     "population": "Población",
     "region": "Región",
-    "noCapital": "Sin capital"
+    "code": "Código",
+    "noCapital": "Sin capital",
+    "subregion": "Subregión",
+    "area": "Superficie",
+    "languages": "Idiomas",
+    "currencies": "Monedas",
+    "practical": "Información práctica",
+    "callingCode": "Prefijo telefónico",
+    "tld": "Dominio de internet",
+    "timezones": "Husos horarios",
+    "drivingSide": "Sentido de circulación",
+    "coastline": "Costa",
+    "landlocked": "Sin salida al mar",
+    "hasCoastline": "Con costa",
+    "borders": "Países fronterizos"
   },
   "states": {
     "loading": "Cargando países…",
     "empty": "No se encontraron resultados",
     "emptyHint": "Prueba con otro término de búsqueda.",
+    "emptyFavorites": "Aún no has guardado favoritos. Pulsa la estrella de un país para añadirlo.",
+    "errorTitle": "No pudimos cargar los datos",
     "error": "Algo salió mal. Revisa tu conexión e inténtalo de nuevo.",
     "retry": "Reintentar"
   },
   "language": {
     "switchTo": "Switch language to English"
+  },
+  "regions": {
+    "Africa": "África",
+    "Americas": "América",
+    "Antarctic": "Antártida",
+    "Asia": "Asia",
+    "Europe": "Europa",
+    "Oceania": "Oceanía"
+  },
+  "drivingSide": {
+    "right": "Derecha",
+    "left": "Izquierda"
+  },
+  "subregions": {
+    "Australia and New Zealand": "Australia y Nueva Zelanda",
+    "Caribbean": "Caribe",
+    "Central America": "América Central",
+    "Central Asia": "Asia Central",
+    "Central Europe": "Europa Central",
+    "Eastern Africa": "África Oriental",
+    "Eastern Asia": "Asia Oriental",
+    "Eastern Europe": "Europa Oriental",
+    "Melanesia": "Melanesia",
+    "Micronesia": "Micronesia",
+    "Middle Africa": "África Central",
+    "North America": "América del Norte",
+    "Northern Africa": "África Septentrional",
+    "Northern Europe": "Europa Septentrional",
+    "Polynesia": "Polinesia",
+    "South America": "América del Sur",
+    "South-Eastern Asia": "Sudeste Asiático",
+    "Southeast Europe": "Europa Sudoriental",
+    "Southern Africa": "África Meridional",
+    "Southern Asia": "Asia Meridional",
+    "Southern Europe": "Europa Meridional",
+    "Western Africa": "África Occidental",
+    "Western Asia": "Asia Occidental",
+    "Western Europe": "Europa Occidental"
   }
 }

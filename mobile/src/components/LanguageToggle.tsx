@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Pressable, StyleSheet, Text } from "react-native";
 
 import { setAppLanguage, type AppLanguage } from "../i18n";
-import { colors, MIN_TOUCH_SIZE } from "../theme";
+import { MIN_TOUCH_SIZE } from "../theme";
 
 /** Header button that toggles between English and Spanish. */
 export function LanguageToggle() {
@@ -27,6 +27,8 @@ const styles = StyleSheet.create({
     minHeight: MIN_TOUCH_SIZE,
     alignItems: "center",
     justifyContent: "center",
+    borderRadius: 22,
+    backgroundColor: "rgba(255,255,255,0.14)",
   },
   pressed: {
     opacity: 0.6,
@@ -34,6 +36,6 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 15,
     fontWeight: "700",
-    color: colors.accent,
+    color: "#FFFFFF",
   },
 });
