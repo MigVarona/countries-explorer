@@ -38,7 +38,7 @@ export default function CountriesPage() {
       {state.status === "loading" && <LoadingView label="Loading countries…" />}
       {state.status === "error" && <ErrorView onRetry={retry} />}
       {state.status === "success" && state.data.length === 0 && (
-        <EmptyView searchTerm={debouncedTerm} />
+        <EmptyView searchTerm={debouncedTerm} onClear={() => setSearchTerm("")} />
       )}
       {state.status === "success" && state.data.length > 0 && (
         <>
