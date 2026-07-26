@@ -106,6 +106,45 @@ diferentes.
 El proyecto se desarrolló de forma incremental en ramas temáticas y se integró en `main` mediante
 merge commits, conservando en el historial la separación entre cada bloque de trabajo:
 
+```mermaid
+gitGraph LR:
+    commit id: "scaffold"
+    branch "feat/shared-core"
+    commit id: "shared"
+    checkout main
+    merge "feat/shared-core"
+    branch "feat/mobile-app"
+    commit id: "app móvil"
+    checkout main
+    merge "feat/mobile-app"
+    branch "fix/rest-countries-v5"
+    commit id: "API v5"
+    checkout main
+    merge "fix/rest-countries-v5"
+    branch "feat/mobile-polish"
+    commit id: "UX móvil"
+    commit id: "EAS Build"
+    checkout main
+    merge "feat/mobile-polish"
+    branch "feat/web-app"
+    commit id: "web Next.js"
+    checkout main
+    merge "feat/web-app"
+    branch "docs/project-delivery"
+    commit id: "documentación"
+    checkout main
+    merge "docs/project-delivery"
+    branch "agent/add-vercel-link"
+    commit id: "enlace web"
+    commit id: "ajustes docs"
+    checkout main
+    merge "agent/add-vercel-link" tag: "v1.0.0"
+    commit id: "mejoras finales"
+```
+
+> El gráfico simplifica algunos commits para mostrar con claridad el flujo de creación, desarrollo
+> y fusión de las ramas. El historial completo se puede consultar en GitHub.
+
 | Rama | Trabajo realizado |
 | --- | --- |
 | `feat/shared-core` | Tipos, cliente de REST Countries, mappers, formatters y tests compartidos. |
