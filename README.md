@@ -101,6 +101,25 @@ countries-explorer/
 Los componentes visuales no se comparten porque React Native y la web necesitan patrones de UI
 diferentes.
 
+## Trabajo en ramas
+
+El proyecto se desarrolló de forma incremental en ramas temáticas y se integró en `main` mediante
+merge commits, conservando en el historial la separación entre cada bloque de trabajo:
+
+| Rama | Trabajo realizado |
+| --- | --- |
+| `feat/shared-core` | Tipos, cliente de REST Countries, mappers, formatters y tests compartidos. |
+| `feat/mobile-app` | Aplicación móvil base: listado, búsqueda, detalle e internacionalización. |
+| `fix/rest-countries-v5` | Adaptación del cliente compartido a REST Countries v5. |
+| `feat/mobile-polish` | Favoritos, filtros, mejoras visuales, branding y configuración de EAS Build. |
+| `feat/web-app` | Aplicación web companion con Next.js. |
+| `docs/project-delivery` | Documentación de instalación, entrega y capturas. |
+| `agent/add-vercel-link` | Enlace al despliegue web y ajustes finales de la documentación. |
+
+La convención utilizada distingue nuevas funcionalidades (`feat/*`), correcciones (`fix/*`) y
+documentación (`docs/*`). Tras validar cada bloque, su rama se fusionó en `main`; la versión
+entregable quedó marcada con la etiqueta `v1.0.0`.
+
 ## Requisitos
 
 - Node.js 22.
