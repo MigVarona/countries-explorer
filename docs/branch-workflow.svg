@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="930" viewBox="0 0 1180 930" role="img" aria-labelledby="title desc">
+  <title id="title">Historial de ramas de Countries Explorer</title>
+  <desc id="desc">Representación visual del historial Git con las ramas de funcionalidad, corrección y documentación fusionadas en main.</desc>
+
+  <rect width="1180" height="930" rx="14" fill="#0d1117"/>
+  <style>
+    .heading { fill: #f0f6fc; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .commit { fill: #f0f6fc; font: 500 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .author { fill: #8b949e; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .branch { fill: #8b949e; font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .tag { fill: #e3b341; font: 600 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .merge-ring { fill: #0d1117; stroke: #58a6ff; stroke-width: 2; }
+    .merge-dot { fill: #58a6ff; }
+  </style>
+
+  <text x="22" y="32" class="heading">⌄ GRAPH</text>
+  <rect x="94" y="14" width="54" height="25" rx="12.5" fill="#1f6feb" opacity=".24"/>
+  <text x="108" y="31" class="branch" fill="#58a6ff">main</text>
+
+  <!-- main -->
+  <path d="M40 66 V886" fill="none" stroke="#2f81f7" stroke-width="2.5"/>
+
+  <!-- feature and documentation branches -->
+  <path d="M40 260 C62 260 74 272 74 292 V340 C74 358 60 378 40 378" fill="none" stroke="#d29922" stroke-width="2.5"/>
+  <path d="M40 434 C62 434 74 446 74 466 C74 486 60 502 40 502" fill="none" stroke="#db61a2" stroke-width="2.5"/>
+  <path d="M40 502 C62 502 74 514 74 534 C74 554 60 570 40 570" fill="none" stroke="#39c5cf" stroke-width="2.5"/>
+  <path d="M40 570 C62 570 74 582 74 602 V622 C74 638 60 658 40 658" fill="none" stroke="#3fb950" stroke-width="2.5"/>
+  <path d="M40 658 C62 658 74 670 74 690 C74 710 60 726 40 726" fill="none" stroke="#a371f7" stroke-width="2.5"/>
+  <path d="M40 726 C62 726 74 738 74 758 C74 778 60 794 40 794" fill="none" stroke="#f2cc60" stroke-width="2.5"/>
+  <path d="M40 794 C62 794 74 806 74 826 C74 846 60 862 40 862" fill="none" stroke="#f778ba" stroke-width="2.5"/>
+
+  <!-- commits on main after v1.0.0 -->
+  <circle cx="40" cy="74" r="5" fill="#58a6ff"/>
+  <text x="62" y="79" class="commit">docs: improve branch workflow visualization</text>
+  <text x="760" y="79" class="author">migvarona</text>
+
+  <circle cx="40" cy="112" r="5" fill="#58a6ff"/>
+  <text x="62" y="117" class="commit">docs: document branch workflow</text>
+  <text x="760" y="117" class="author">migvarona</text>
+
+  <circle cx="40" cy="150" r="5" fill="#58a6ff"/>
+  <text x="62" y="155" class="commit">feat(web): improve empty search state</text>
+  <text x="760" y="155" class="author">migvarona</text>
+
+  <circle cx="40" cy="188" r="5" fill="#58a6ff"/>
+  <text x="62" y="193" class="commit">docs: clarify source-first delivery</text>
+  <text x="760" y="193" class="author">migvarona</text>
+
+  <circle cx="40" cy="226" r="5" fill="#58a6ff"/>
+  <text x="62" y="231" class="commit">docs: use permanent APK release link</text>
+  <text x="760" y="231" class="author">migvarona</text>
+
+  <!-- agent/add-vercel-link -->
+  <circle cx="40" cy="260" r="8" class="merge-ring"/>
+  <circle cx="40" cy="260" r="3" class="merge-dot"/>
+  <text x="62" y="265" class="commit">Merge branch 'agent/add-vercel-link'</text>
+  <text x="760" y="265" class="author">migvarona</text>
+  <rect x="402" y="245" width="68" height="22" rx="11" fill="#3d2f0b" stroke="#9e6a03"/>
+  <text x="415" y="260" class="tag">v1.0.0</text>
+
+  <circle cx="74" cy="300" r="5" fill="#d29922"/>
+  <text x="96" y="305" class="commit">docs: preserve local web instructions</text>
+  <text x="760" y="305" class="author">migvarona</text>
+
+  <circle cx="74" cy="340" r="5" fill="#d29922"/>
+  <text x="96" y="345" class="commit">docs: add deployed web URL</text>
+  <text x="760" y="345" class="author">migvarona</text>
+
+  <circle cx="40" cy="378" r="5" fill="#58a6ff"/>
+  <text x="62" y="383" class="commit">docs: refresh mobile app screenshots</text>
+  <text x="760" y="383" class="author">migvarona</text>
+
+  <!-- docs/project-delivery -->
+  <circle cx="40" cy="434" r="8" class="merge-ring"/>
+  <circle cx="40" cy="434" r="3" class="merge-dot"/>
+  <text x="62" y="439" class="commit">Merge branch 'docs/project-delivery'</text>
+  <text x="760" y="439" class="author">migvarona</text>
+
+  <circle cx="74" cy="466" r="5" fill="#db61a2"/>
+  <text x="96" y="471" class="commit">docs: add setup, delivery guide and screenshots</text>
+  <text x="760" y="471" class="author">migvarona</text>
+
+  <!-- feat/web-app -->
+  <circle cx="40" cy="502" r="8" class="merge-ring"/>
+  <circle cx="40" cy="502" r="3" class="merge-dot"/>
+  <text x="62" y="507" class="commit">Merge branch 'feat/web-app'</text>
+  <text x="760" y="507" class="author">migvarona</text>
+
+  <circle cx="74" cy="534" r="5" fill="#39c5cf"/>
+  <text x="96" y="539" class="commit">feat(web): add Next.js countries companion</text>
+  <text x="760" y="539" class="author">migvarona</text>
+
+  <!-- feat/mobile-polish -->
+  <circle cx="40" cy="570" r="8" class="merge-ring"/>
+  <circle cx="40" cy="570" r="3" class="merge-dot"/>
+  <text x="62" y="575" class="commit">Merge branch 'feat/mobile-polish'</text>
+  <text x="760" y="575" class="author">migvarona</text>
+
+  <circle cx="74" cy="602" r="5" fill="#3fb950"/>
+  <text x="96" y="607" class="commit">chore(mobile): configure branding and EAS APK build</text>
+  <text x="760" y="607" class="author">migvarona</text>
+
+  <circle cx="74" cy="638" r="5" fill="#3fb950"/>
+  <text x="96" y="643" class="commit">feat(mobile): polish discovery and country details</text>
+  <text x="760" y="643" class="author">migvarona</text>
+
+  <!-- fix/rest-countries-v5 -->
+  <circle cx="40" cy="658" r="8" class="merge-ring"/>
+  <circle cx="40" cy="658" r="3" class="merge-dot"/>
+  <text x="62" y="663" class="commit">Merge branch 'fix/rest-countries-v5'</text>
+  <text x="760" y="663" class="author">migvarona</text>
+
+  <circle cx="74" cy="690" r="5" fill="#a371f7"/>
+  <text x="96" y="695" class="commit">fix(shared): adapt REST Countries client to v5</text>
+  <text x="760" y="695" class="author">migvarona</text>
+
+  <!-- feat/mobile-app -->
+  <circle cx="40" cy="726" r="8" class="merge-ring"/>
+  <circle cx="40" cy="726" r="3" class="merge-dot"/>
+  <text x="62" y="731" class="commit">Merge branch 'feat/mobile-app'</text>
+  <text x="760" y="731" class="author">migvarona</text>
+
+  <circle cx="74" cy="758" r="5" fill="#f2cc60"/>
+  <text x="96" y="763" class="commit">feat(mobile): Expo app with list, search, detail and i18n</text>
+  <text x="760" y="763" class="author">migvarona</text>
+
+  <!-- feat/shared-core -->
+  <circle cx="40" cy="794" r="8" class="merge-ring"/>
+  <circle cx="40" cy="794" r="3" class="merge-dot"/>
+  <text x="62" y="799" class="commit">Merge branch 'feat/shared-core'</text>
+  <text x="760" y="799" class="author">migvarona</text>
+
+  <circle cx="74" cy="826" r="5" fill="#f778ba"/>
+  <text x="96" y="831" class="commit">feat(shared): domain types, client, mappers and tests</text>
+  <text x="760" y="831" class="author">migvarona</text>
+
+  <circle cx="40" cy="862" r="5" fill="#58a6ff"/>
+  <text x="62" y="867" class="commit">chore: scaffold npm workspaces monorepo</text>
+  <text x="760" y="867" class="author">migvarona</text>
+
+  <text x="22" y="908" class="branch">Historial simplificado · commits ordenados del más reciente al más antiguo</text>
+</svg>
